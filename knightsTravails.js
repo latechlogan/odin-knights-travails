@@ -1,7 +1,20 @@
 #!/usr/bin/env node
 
 function getValidMoves(x, y) {
-  // logic
+  let moves = [
+    [x + 2, y + 1],
+    [x + 2, y - 1],
+    [x - 2, y + 1],
+    [x - 2, y - 1],
+    [x + 1, y + 2],
+    [x + 1, y - 2],
+    [x - 1, y + 2],
+    [x - 1, y - 2],
+  ];
+
+  return moves.filter((coordinates) =>
+    isValidPosition(coordinates[0], coordinates[1])
+  );
 }
 
 function isValidPosition(x, y) {

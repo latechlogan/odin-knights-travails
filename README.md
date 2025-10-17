@@ -15,14 +15,6 @@ This project finds the shortest path for a knight to move from any square to any
 - Returns complete path from start to finish
 - Clean, formatted output showing move count and full path
 
-## Project Structure
-
-```
-.
-├── knights-travails.js  # Core implementation (knightMoves, getValidMoves, isValidPosition)
-└── README.md           # You're reading it
-```
-
 ## How It Works
 
 ### Board Representation

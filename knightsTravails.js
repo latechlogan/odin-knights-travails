@@ -55,6 +55,4 @@ function knightMoves(start, target) {
   }
 }
 
-console.log(knightMoves([3, 3], [4, 3]));
-
 export { knightMoves };

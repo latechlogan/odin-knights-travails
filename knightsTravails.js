@@ -21,10 +21,12 @@ function isValidPosition(position) {
   return x >= 0 && x <= 7 && y >= 0 && y <= 7;
 }
 
-console.log(getValidMoves([0, 0]));
-
 function knightMoves(start, end) {
-  // main logic
+  let queue = [{ position: start, path: [start] }];
+  let visited = new Set();
+  visited.add(start.join());
+
+  return visited;
 }
 
 export { knightMoves };
